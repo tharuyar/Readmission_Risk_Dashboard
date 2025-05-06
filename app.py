@@ -1,7 +1,6 @@
 import streamlit as st
-st.set_page_config(page_title="Readmission Risk Dashboard", layout="wide")  # ✅ MUST be 2nd line, after import
+st.set_page_config(page_title="Readmission Risk Dashboard", layout="wide")  # MUST BE IMMEDIATELY AFTER streamlit import
 
-# All other imports below this
 import pandas as pd
 import joblib
 import matplotlib.pyplot as plt
