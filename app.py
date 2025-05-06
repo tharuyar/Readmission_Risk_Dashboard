@@ -1,11 +1,14 @@
 
 import streamlit as st
+st.set_page_config(page_title="Readmission Risk Dashboard", layout="wide")  # ✅ MUST be the first Streamlit command
+
 import pandas as pd
 import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 from streamlit_extras.metric_cards import style_metric_cards
 import shap
+
 
 # ---- SET SEABORN STYLE ----
 sns.set_theme(style="whitegrid", rc={
@@ -51,7 +54,7 @@ st.title("🏥 HealthOS: 30-Day Readmission Risk Dashboard")
 # ---- TABS ----
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["🔍 Predict by Patient", "📝 Manual Entry", "📊 Insights", "📋 High-Risk Patients", "💡 Feature Importance"])
 
-# ---- TAB 1: PREDICT BY PATIENT ----
+
 # ---- TAB 1: PREDICT BY PATIENT ----
 with tab1:
     st.subheader("🔍 Predict by Selecting a Patient")
