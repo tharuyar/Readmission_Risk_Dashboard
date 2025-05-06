@@ -27,7 +27,6 @@ features = [f for f in features if f != '0']
 data = pd.read_csv("readmission_test_data.csv")
 
 # ---- PAGE SETUP ----
-st.set_page_config(page_title="Readmission Risk Dashboard", layout="wide")
 st.markdown("""
 <style>
     .patient-card {
